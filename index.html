@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritovex - Creative Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Outfit', sans-serif;
+        background-color: #E4E4E4;
+        color: #111111;
+        overflow-x: hidden;
+      }
+      .clash-font {
+        font-family: 'Outfit', sans-serif; /* Fallback for Clash Display */
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      .custom-shape {
+        border-radius: 40px 180px 40px 40px;
+      }
+      .ticker-animation {
+        display: flex;
+        width: fit-content;
+        animation: scroll 30s linear infinite;
+      }
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .service-row:hover .service-number {
+        color: rgba(255, 149, 5, 0.8);
+      }
+      .service-row:hover .service-arrow {
+        background-color: #FF9505;
+        border-color: #FF9505;
+        transform: rotate(45deg);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6E00FF',
+              accent: '#FF9505',
+              background: '#E4E4E4',
+              textPrimary: '#111111',
+              link: '#FF9505',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
